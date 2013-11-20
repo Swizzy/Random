@@ -15,3 +15,5 @@ NintendoParentalTool - A Tool to get the parental reset code for WII, DSi and 3D
 x360 Account Editor - A Tool for editing Xbox 360 "Account" files (part of your profile)
 
 GetMediaID - A Tool to get the MediaID from a Xbox 360 xex
+
+GhostBlockDumper - A Tool to dump a Xbox 360 NAND using NANDPro when there is a "ghostblock"
