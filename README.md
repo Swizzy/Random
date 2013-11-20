@@ -1,4 +1,1 @@
-Random
-======
-
-Some of my random projects...
+CPUKey Checker - A Tool to check that your cpukey is valid
