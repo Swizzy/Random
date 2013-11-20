@@ -9,3 +9,5 @@ SwizzContact - A Contact management tool i made for a friend quite some time ago
 CBExtractor - A Batch CB Extraction tool (scans and extracts unknown CB Versions)
 
 CBDecryptor - A CB Decryption tool
+
+NintendoParentalTool - A Tool to get the parental reset code for WII, DSi and 3DS
