@@ -7,3 +7,5 @@ UpdateHelper - A Update helper, basically a tool you can call to remove and repl
 SwizzContact - A Contact management tool i made for a friend quite some time ago :)
 
 CBExtractor - A Batch CB Extraction tool (scans and extracts unknown CB Versions)
+
+CBDecryptor - A CB Decryption tool
