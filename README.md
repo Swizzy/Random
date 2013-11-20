@@ -13,3 +13,5 @@ CBDecryptor - A CB Decryption tool
 NintendoParentalTool - A Tool to get the parental reset code for WII, DSi and 3DS
 
 x360 Account Editor - A Tool for editing Xbox 360 "Account" files (part of your profile)
+
+GetMediaID - A Tool to get the MediaID from a Xbox 360 xex
