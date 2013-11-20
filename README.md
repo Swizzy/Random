@@ -11,3 +11,5 @@ CBExtractor - A Batch CB Extraction tool (scans and extracts unknown CB Versions
 CBDecryptor - A CB Decryption tool
 
 NintendoParentalTool - A Tool to get the parental reset code for WII, DSi and 3DS
+
+x360 Account Editor - A Tool for editing Xbox 360 "Account" files (part of your profile)

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x360 Account Editor", "x360 Account Editor\x360 Account Editor.csproj", "{68363E82-2B7B-4898-97F4-B0FFA8F859C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68363E82-2B7B-4898-97F4-B0FFA8F859C4}.Debug|x86.ActiveCfg = Debug|x86
+		{68363E82-2B7B-4898-97F4-B0FFA8F859C4}.Debug|x86.Build.0 = Debug|x86
+		{68363E82-2B7B-4898-97F4-B0FFA8F859C4}.Release|x86.ActiveCfg = Release|x86
+		{68363E82-2B7B-4898-97F4-B0FFA8F859C4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

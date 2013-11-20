@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExitWithoutSaving" xml:space="preserve">
+    <value>Are you sure you want to exit without saving?</value>
+  </data>
+  <data name="ExitWithoutSavingTitle" xml:space="preserve">
+    <value>Exit without saving?</value>
+  </data>
+  <data name="EncryptingAccount" xml:space="preserve">
+    <value>Encrypting account...</value>
+  </data>
+  <data name="EncryptionComplete" xml:space="preserve">
+    <value>Encryption complete! Waiting for further instructions...</value>
+  </data>
+  <data name="UnableToDetermineAccType" xml:space="preserve">
+    <value>Unable to determine which key to use, is this account for a retail console?</value>
+  </data>
+  <data name="RetailProfileTitle" xml:space="preserve">
+    <value>Retail profile?</value>
+  </data>
+  <data name="DecryptedWithDevkitKey" xml:space="preserve">
+    <value>Decryption was successful with devkit key!</value>
+  </data>
+  <data name="TryingDevkitKey" xml:space="preserve">
+    <value>Trying to decrypt your account using devkit key...</value>
+  </data>
+  <data name="TryingRetailKey" xml:space="preserve">
+    <value>Trying to decrypt your account using retail key...</value>
+  </data>
+  <data name="DecryptedWithRetailKey" xml:space="preserve">
+    <value>Decryption was successful with retail key!</value>
+  </data>
+  <data name="UnableToDecrypt" xml:space="preserve">
+    <value>ERROR: Unable to decrypt your account!</value>
+  </data>
+  <data name="PassCodeRemoved" xml:space="preserve">
+    <value>Passcode removed! Waiting for further instructions...</value>
+  </data>
+  <data name="RemovingPasscode" xml:space="preserve">
+    <value>Removing passcode from account and setting it to online only...</value>
+  </data>
+  <data name="YourPasscodeIsTitle" xml:space="preserve">
+    <value>Your passcode is...</value>
+  </data>
+  <data name="PatchingAccType" xml:space="preserve">
+    <value>Patching account type...</value>
+  </data>
+  <data name="AccTypePatchDone" xml:space="preserve">
+    <value>Patching of account type Done! waiting for further instructions...</value>
+  </data>
+  <data name="PatchingLiveSignature" xml:space="preserve">
+    <value>Patching LIVE signature...</value>
+  </data>
+  <data name="PatchingLiveSignatureDone" xml:space="preserve">
+    <value>Patching of LIVE signature Done! waiting for further instructions...</value>
+  </data>
+  <data name="PatchingAccNameDone" xml:space="preserve">
+    <value>Patching of account name done! Waiting for further instructions...</value>
+  </data>
+  <data name="PatchingAccName" xml:space="preserve">
+    <value>Pathching account name...</value>
+  </data>
+  <data name="DefaultXUIDStart" xml:space="preserve">
+    <value>0009000000</value>
+  </data>
+  <data name="XUIDGenDone" xml:space="preserve">
+    <value>New XUID successfully generated!</value>
+  </data>
+  <data name="GeneratingXUID" xml:space="preserve">
+    <value>Generating new XUID...</value>
+  </data>
+  <data name="XUIDPatchDone" xml:space="preserve">
+    <value>Patching XUID Done!</value>
+  </data>
+  <data name="PatchingXUID" xml:space="preserve">
+    <value>Patching XUID...</value>
+  </data>
+  <data name="DoneMakingOffline" xml:space="preserve">
+    <value>Done patching account as offline! waiting for further instructions...</value>
+  </data>
+  <data name="MakingOffline" xml:space="preserve">
+    <value>Patching account as offline...</value>
+  </data>
+  <data name="MakingOnline" xml:space="preserve">
+    <value>Patching account as online...</value>
+  </data>
+  <data name="AutoGenXUID" xml:space="preserve">
+    <value>Auto-Generated a new XUID for you, the new ID is: </value>
+  </data>
+  <data name="NewIDGeneratedTitle" xml:space="preserve">
+    <value>New ID Generated</value>
+  </data>
+  <data name="MakeOnlineDone" xml:space="preserve">
+    <value>Done patching account as online! waiting for further instructions...</value>
+  </data>
+  <data name="LoadingAccFileToMemory" xml:space="preserve">
+    <value>Loading account file into memory...</value>
+  </data>
+  <data name="FileLoaded" xml:space="preserve">
+    <value>Account file loaded!</value>
+  </data>
+  <data name="SavingAccountFile" xml:space="preserve">
+    <value>Saving new account file...</value>
+  </data>
+  <data name="AccountFileSaved" xml:space="preserve">
+    <value>Account file saved to: </value>
+  </data>
+  <data name="GettingCurrentInfo" xml:space="preserve">
+    <value>Getting current account information...</value>
+  </data>
+  <data name="ErrorCorruptOrEncrypted" xml:space="preserve">
+    <value>ERROR: Your account is etheir corrupt or not decrypted, decrypt it first!</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="PassProtected" xml:space="preserve">
+    <value>Password Protected</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="FamilyGold" xml:space="preserve">
+    <value>Family Gold</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="Retail" xml:space="preserve">
+    <value>Retail</value>
+  </data>
+  <data name="Devkit" xml:space="preserve">
+    <value>Devkit</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unkown</value>
+  </data>
+  <data name="CurrentInfoDone" xml:space="preserve">
+    <value>Getting current account information Done! Waiting for further instructions...</value>
+  </data>
+  <data name="BadXUID" xml:space="preserve">
+    <value>ERROR: Your XUID must start with "0009" to be valid!</value>
+  </data>
+</root>
