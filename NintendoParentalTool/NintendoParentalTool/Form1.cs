@@ -1,31 +1,34 @@
 ﻿namespace NintendoParentalTool {
     using System;
+    using System.Reflection;
     using System.Windows.Forms;
 
     internal sealed partial class Form1 : Form {
         internal Form1() {
             InitializeComponent();
+            var ver = Assembly.GetAssembly(typeof(Form1)).GetName().Version;
+            var name = Assembly.GetAssembly(typeof(Form1)).GetName().Name + string.Format(" v{0}.{1}", ver.Major, ver.Minor);
+            Text = name;
+            outputbox.Text = string.Format("{1} Started!{0}The important data is:{0}- Servicecode (Inquiry Number){0}- Date (Day and Month) on the console{0}Set the date, type in your code and press the button...", Environment.NewLine, name);
         }
 
         private void GetcodebtnClick(object sender, EventArgs e) {
             var month = datebox.Value.ToString("MM");
             var day = datebox.Value.ToString("dd");
-            uint servicecode = 0;
+            uint servicecode;
             uint uday;
             uint umonth;
             uint.TryParse(day, out uday);
             uint.TryParse(month, out umonth);
-            if((servicecodebox.Text.Length != 8) || !uint.TryParse(servicecodebox.Text, out servicecode))
+            if (servicecodebox.Text.Length != 8 || !uint.TryParse(servicecodebox.Text, out servicecode)) {
                 MessageBox.Show(@"ERROR: Please check your service code, it should be 8 numbers!", @"ERROR - Bad code", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            servicecode %= 10000;
-            uday %= 100;
-            umonth %= 100;
-            var str = string.Format("{0:D02}{1:D02}{2:D04} ", umonth, uday, servicecode);
+                return;
+            }
+            var str = string.Format("{0:D02}{1:D02}{2:D04} ", umonth % 100, uday % 100, servicecode % 10000);
             var masterkey = CalculateMasterKey(str);
             str = string.Format("{0:MMdd}{1}", datebox.Value, servicecodebox.Text.Substring(4));
             var wiikey = CalculateMasterKeyWii(str);
-            var msg = string.Format("Your 3DS Masterkey is: {0:D05}\nYour Wii/DSi Masterkey is: {1:D05}\n\nOriginal 3DS Code by neimod\nOriginal Wii code by Hector Martin Cantero <hector@marcansoft.com>\nPorted to C# along with a GUI by Swizzy", masterkey, wiikey);
-            MessageBox.Show(msg);
+            outputbox.Text = string.Format("Your 3DS Masterkey is: {0:D05}\nYour Wii/DSi Masterkey is: {1:D05}\n\nOriginal 3DS Code by neimod\nOriginal Wii/DSi code by Hector Martin Cantero <hector@marcansoft.com>\nPorted to C# along with a GUI by Swizzy", masterkey, wiikey);
         }
 
         private static uint CalculateMasterKey(string generator) {
@@ -100,8 +103,17 @@
             return crc;
         }
 
-        private void ServicecodeboxKeyPress(object sender, KeyPressEventArgs e) {
-            e.Handled = !char.IsDigit(e.KeyChar);
+        private void ServicecodeboxTextChanged(object sender, EventArgs e) {
+            if(servicecodebox.Text.Contains(" ")) {
+                servicecodebox.Text = servicecodebox.Text.Replace(" ", "").Trim();
+                if(servicecodebox.TextLength > 8)
+                    servicecodebox.Text = servicecodebox.Text.Substring(0, 8);
+                servicecodebox.Select(servicecodebox.TextLength, 0);
+            }
+            else if(servicecodebox.TextLength > 8) {
+                servicecodebox.Text = servicecodebox.Text.Substring(0, 8);
+                servicecodebox.Select(servicecodebox.TextLength, 0);
+            }
         }
     }
 }

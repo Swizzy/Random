@@ -1,4 +1,4 @@
-Nintendo Parental Tool
+Nintendo Parental Tool v1.1
 -----------------
 
 ****************
@@ -22,6 +22,12 @@ Nintendo Parental Tool
 *************
 * Changelog *
 *************
+
+- Nintendo Parental Tool v1.1
+ - Design changes
+ - Now support copy 'n' paste from youtube etc. (it'll strip away empty spaces and cut the lines to be 8 digits)
+ - Now also have some minor instructions when started
+ - Also displays version in both title bar and the output textbox
 
 - Nintendo Parental Tool
  - Added Nintendo Wii and DSi key generation aswell

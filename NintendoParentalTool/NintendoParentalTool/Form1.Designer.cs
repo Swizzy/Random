@@ -33,6 +33,7 @@
             this.servicecodebox = new System.Windows.Forms.TextBox();
             this.datebox = new System.Windows.Forms.DateTimePicker();
             this.getcodebtn = new System.Windows.Forms.Button();
+            this.outputbox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -47,11 +48,10 @@
             // servicecodebox
             // 
             this.servicecodebox.Location = new System.Drawing.Point(88, 12);
-            this.servicecodebox.MaxLength = 8;
             this.servicecodebox.Name = "servicecodebox";
             this.servicecodebox.Size = new System.Drawing.Size(184, 20);
             this.servicecodebox.TabIndex = 1;
-            this.servicecodebox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ServicecodeboxKeyPress);
+            this.servicecodebox.TextChanged += new System.EventHandler(this.ServicecodeboxTextChanged);
             // 
             // datebox
             // 
@@ -70,17 +70,27 @@
             this.getcodebtn.UseVisualStyleBackColor = true;
             this.getcodebtn.Click += new System.EventHandler(this.GetcodebtnClick);
             // 
+            // outputbox
+            // 
+            this.outputbox.Location = new System.Drawing.Point(12, 93);
+            this.outputbox.Name = "outputbox";
+            this.outputbox.ReadOnly = true;
+            this.outputbox.Size = new System.Drawing.Size(260, 108);
+            this.outputbox.TabIndex = 4;
+            this.outputbox.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(284, 99);
+            this.ClientSize = new System.Drawing.Size(284, 213);
+            this.Controls.Add(this.outputbox);
             this.Controls.Add(this.getcodebtn);
             this.Controls.Add(this.datebox);
             this.Controls.Add(this.servicecodebox);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Nintendo Parental Tool";
@@ -95,6 +105,7 @@
         private System.Windows.Forms.TextBox servicecodebox;
         private System.Windows.Forms.DateTimePicker datebox;
         private System.Windows.Forms.Button getcodebtn;
+        private System.Windows.Forms.RichTextBox outputbox;
     }
 }
 
