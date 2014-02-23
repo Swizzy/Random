@@ -40,9 +40,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PS3Patcher.patch1_nand.bin" />
-    <EmbeddedResource Include="PS3Patcher.patch1_nor.bin" />
-    <EmbeddedResource Include="PS3Patcher.patch2.bin" />
+    <EmbeddedResource Include="patch1_nand.bin" />
+    <EmbeddedResource Include="patch1_nor.bin" />
+    <EmbeddedResource Include="patch2.bin" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

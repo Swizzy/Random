@@ -108,9 +108,9 @@
                                 return;
                             }
                             case 0x10000000L:
-                                patchData = GetPatchData("patch1_nand.bin", false);
+                                patchData = GetPatchData("patch1_nand.bin");
                                 ApplyPatch(1, 3, 0x91800, patchData, ref target);
-                                patchData = GetPatchData("patch2.bin", false);
+                                patchData = GetPatchData("patch2.bin");
                                 ApplyPatch(2, 3, 0xc0030, patchData, ref target);
                                 ApplyPatch(3, 3, 0x7c0020, patchData, ref target);
                                 Console.WriteLine("All patches have been applied to {0}", destFileName);
