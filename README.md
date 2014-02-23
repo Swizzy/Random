@@ -19,3 +19,5 @@ GetMediaID - A Tool to get the MediaID from a Xbox 360 xex
 GhostBlockDumper - A Tool to dump a Xbox 360 NAND using NANDPro when there is a "ghostblock"
 
 DotNETAssembly2Version - A Tool to print out the assembly version of a .NET assembly (dll & exe)
+
+MD5Gen - A Tool to generate MD5 hashes of files (saved to filename.extension.md5)
