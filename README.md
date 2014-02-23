@@ -21,3 +21,5 @@ GhostBlockDumper - A Tool to dump a Xbox 360 NAND using NANDPro when there is a 
 DotNETAssembly2Version - A Tool to print out the assembly version of a .NET assembly (dll & exe)
 
 MD5Gen - A Tool to generate MD5 hashes of files (saved to filename.extension.md5)
+
+XeLLReplacer - A Tool to replace the XeLL binary in a pre-compiled ECC image (Xbox 360)
