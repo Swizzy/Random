@@ -23,3 +23,5 @@ DotNETAssembly2Version - A Tool to print out the assembly version of a .NET asse
 MD5Gen - A Tool to generate MD5 hashes of files (saved to filename.extension.md5)
 
 XeLLReplacer - A Tool to replace the XeLL binary in a pre-compiled ECC image (Xbox 360)
+
+PS3Patcher - A PS3 NAND/NOR Patcher based on Judges NOR Patch, meant to be used as a replacement for Rogero's autopatcher when 3.55 downgrade is required (with PS3DumpChecker)
